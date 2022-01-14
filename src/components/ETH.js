@@ -1,7 +1,6 @@
 import React from "react";
 
 const ETH = ({ valueETH, handleETHchange }) => {
-  console.log(valueETH);
   return (
     <div className="main__eth">
       <label htmlFor="">Amount</label>

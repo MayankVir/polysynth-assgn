@@ -48,7 +48,6 @@ const Main = () => {
     if (e === null || e === "" || isNaN(e)) {
       setValueTolerance(0.5);
     } else {
-      console.log(e);
       setValueTolerance(e);
     }
     setShowData(false);
