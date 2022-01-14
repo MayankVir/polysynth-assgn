@@ -1,0 +1,143 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.main {
+  border-radius: 10px;
+
+  border: 1px solid black;
+
+  /* height: 500px; */
+  width: 350px;
+  padding: 3%;
+}
+
+.main__usdp,
+.main__eth {
+  width: 100%;
+  margin: 0 0 50px 0;
+}
+
+.main__tolerance,
+.main__leverage {
+  width: 100%;
+  margin: 0 0 30px 0;
+}
+
+.main__tolerance > div,
+.main__leverage > div {
+  margin: 0 0 10px 0;
+}
+
+.main__usdpInput,
+.main__ethInput {
+  position: relative;
+  margin: 5px 0;
+}
+.main__usdpInput > input,
+.main__ethInput > input {
+  border: 0px;
+  border-bottom: 2px solid grey;
+  width: 100%;
+  padding: 3px;
+}
+
+.main__usdpInput > input:focus,
+.main__ethInput > input:focus {
+  outline: none;
+}
+
+.inputRightLabel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75rem;
+}
+
+.main__leverage {
+  width: 100%;
+}
+
+.main__leverage > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__leverage > input {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.main__tolerance > form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boxed label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100px; */
+  padding: 5px 10px;
+  border: solid 2px #ccc;
+  transition: all 0.3s;
+  border-radius: 20px;
+}
+
+.boxed input[type="radio"] {
+  display: none;
+}
+
+.boxed input[type="radio"]:checked + label {
+  border: solid 2px black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.other {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 5px 10px;
+  border: solid 2px #ccc;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.other > input {
+  border: none;
+  width: 40px;
+}
+.other > input:focus {
+  outline: none;
+}
+
+.main__orderBtn {
+  width: 100%;
+  background-color: rgb(252, 249, 249);
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.main__orderBtn:hover {
+  background: #ccc;
+}
